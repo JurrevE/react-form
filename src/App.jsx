@@ -21,12 +21,12 @@ export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
     if (formData.password === formData.confirmedPassword) {
-      console.log("Successfully signed up");
+      alert("Successfully signed up");
       if (formData.checkbox) {
         console.log("Thanks for signing up for our newsletter!");
       }
     } else {
-      console.log("Passwords do not match!");
+      alert("Passwords do not match!");
     }
   }
 
